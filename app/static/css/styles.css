@@ -1,18 +1,23 @@
 :root {
-  --main-bg-color: #626567; /* #00000 */
+  --main-bg-color: #F4F6F7; /* #909497 */
   --font-family: Courier New, monospace;
   --font-variant: small-caps;
   --font-stretch: ultra-condensed;
-  --font-weight: 100;
-  --color: #ffffff;
+  --font-weight: 500;
+  --color: #000000; /* #ffffff */
 }
 
 
 body {
   background: var(--main-bg-color);
+  color: var(--color);
+  font-family: var(--font-family);
+  font-variant: var(--font-variant);
+  font-weight: var(--font-weight);
+  font-stretch: var(--font-stretch);
 }
 
-h1, h2, h3, h4, a, p {
+h1, h2, h3, h4, h5, a, p {
   font-family: var(--font-family);
   font-variant: var(--font-variant);
   font-weight: var(--font-weight);
@@ -28,12 +33,6 @@ h2 {
   font-size: 1.5em;
 }
 
-.paragraph {
-  float: right;
-  list-style-type: none;
-  margin-top: -5px;
-}
-
 a {
   font-size: 1.5em;
   text-decoration: none;
@@ -41,7 +40,16 @@ a {
   border-radius: 0 5px 5px 0;
 }
 
+a:hover{
+  margin-top: -10px;
+  color: #000000;
+  font-weight: 500;
+}
+
 .nav{
+  /*padding-top: 75px;*/
+  background: none;
+  border: none;
   float: right;
   white-space: nowrap;
   overflow: hidden;
@@ -53,16 +61,26 @@ a {
   margin: 10px;
 }
 
-a:hover{
-  margin-top: -10px;
-  color: #000000;
-  font-weight: 500;
+.paragraph {
+  float: right;
+  list-style-type: none;
+  margin-top: -5px;
+  margin-right: 10px;
 }
 
 .container {
-  padding-top: 250px;
-  padding-left: 500px;
+/*  padding-top: 250px;
+  padding-left: 500px;*/
+  /*background-image: url(static/img/python.jpeg)*/
+  padding-top: 75px;
+  padding-left: 5px;
+  height: 500px;
 }
+
+
+/*************/
+/*   Home    */
+/*************/
 
 .big-title{
   font-size: 2.5em;
@@ -72,6 +90,11 @@ a:hover{
   font-stretch: var(--font-stretch);
   color: var(--color);
   float: all;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+/*  padding-left: 500px;
+  padding-top: 150px;*/
 }
 
 .undertitle{
@@ -81,10 +104,13 @@ a:hover{
   font-weight: var(--font-weight);
   font-stretch: var(--font-stretch);
   color: var(--color);
+  position: absolute;
+  top: 45%;
+  left: 68%;
 }
 
 .footer{
-  padding-top: 300px;
+  padding-top: 70px;
   list-style-type: none;
 }
 
@@ -93,3 +119,52 @@ a:hover{
  display: inline-block;
 
 }
+
+.picture {
+  background-image: url(static/css/python.jpeg)
+  position: relative;
+  /*padding-left: 0px;*/
+  margin-top: -115px !important;
+  margin-left: -20px;
+  float: left;
+  /*margin: -30px;*/
+
+}
+
+
+/*************/
+/* Portfolio */
+/*************/
+
+.space {
+  padding-left: 75px;
+  padding-top: 40px;
+}
+
+.column {
+  float: left;
+  width: 300px;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/*************/
+/*   About   */
+/*************/
+
+
+
+
+
+/*************/
+/*   Resume  */
+/*************/
