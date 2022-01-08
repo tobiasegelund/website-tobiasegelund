@@ -1,3 +1,3 @@
 ## Personal Website
 
-Under development
+Only used for testing various of things
